@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class ValidationMethods {
@@ -80,7 +81,7 @@ public class ValidationMethods {
 			System.out.print(prompt);
 			input = scnr.nextLine();
 			
-			if (input.matches("[<][a-zA-z0-9]+[>] [<][/][a-zA-z0-9]+[>]")) {
+			if (input.matches("[<][(a-zA-z0-9)]+[>][\\s\\S]*[<][/][(a-zA-z0-9)]+[>]")) {
 				isValid = true;
 				System.out.println("Thank you!");
 			} else {

@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import pigLatin.ValidationMethods;
+
 public class Lab7 {
 	
 	
@@ -10,8 +12,10 @@ public class Lab7 {
 		boolean validPhoneNum = ValidationMethods.validatePhoneNum(scnr, "Please enter a valid phone number 000-000-0000: ");
 		boolean validDOB = ValidationMethods.validateDOB(scnr, "Please enter a valid date of birth dd/mm/yyyy: ");
 		boolean validHTML = ValidationMethods.validateHTML(scnr,  "Please enter a valid HTML expression");
-		if(validEmail && validName && validPhoneNum && validDOB) {
+		if(validEmail && validName && validPhoneNum && validDOB && validHTML) {
 			System.out.println("Looks like everything works. Have a nice day!");
-		}	
+		}
+		
+		
 	}
 }
